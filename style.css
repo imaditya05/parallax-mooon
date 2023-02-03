@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#2b1005, #7597de);
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 30px 100px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header .logo {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+header ul li {
+  text-decoration: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: whitesmoke;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 10px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background-color: whitesmoke;
+  color: #2b1005;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 500;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+section img#moon {
+  mix-blend-mode: screen;
+}
+section #text {
+  color: whitesmoke;
+  font-size: 8em;
+  white-space: nowrap;
+  font-weight: 900;
+  z-index: 9;
+  position: absolute;
+  right: -300px;
+}
+
+section #btn {
+  text-decoration: none;
+  padding: 8px 30px;
+  display: inline-block;
+  background-color: whitesmoke;
+  color: #2b1005;
+  font-size: 1.5em;
+  border-radius: 40px;
+  z-index: 9;
+  transform: translateY(100px);
+  font-weight: 700;
+}
+section img#mountains_front {
+  z-index: 10;
+}
+.sec {
+  position: relative;
+  background-color: #1c0522;
+  padding: 100px;
+}
+.sec h2 {
+  font-size: 3em;
+  color: whitesmoke;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.sec p {
+  color: whitesmoke;
+  font-size: 1.1em;
+}
